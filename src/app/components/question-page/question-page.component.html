@@ -1,0 +1,26 @@
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+<div *ngIf="isValid" class="col-md-12">
+    <div class="col-md-12 bg-info text-center text-uppercase p-md-2" style="color: white;">
+      Sample Test Portal
+    </div>
+    <div>
+      Timer : {{minutes}} : {{seconds}}
+    </div>
+    <div class="col-md-6">
+      <div>Question</div>
+      <div>{{questionData.statement}}</div>
+    </div>
+    <div class="col-md-6">
+      <div>Options</div>
+      <ul>
+        <li><input type="radio" name="nextQuesData.answer" [(ngModel)]="nextQuesData.answer" value="0" />{{questionData.optionA}} </li>
+        <li><input type="radio" name="nextQuesData.answer" [(ngModel)]="nextQuesData.answer" value="1" />{{questionData.optionB}}</li>
+        <li><input type="radio" name="nextQuesData.answer" [(ngModel)]="nextQuesData.answer" value="2" />{{questionData.optionC}}</li>
+        <li><input type="radio" name="nextQuesData.answer" [(ngModel)]="nextQuesData.answer" value="3" />{{questionData.optionD}}</li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <button type="button" (click)="thankYouPage(nextQuesData.answer)">Submit</button>
+      <button type="button" (click)="nextQuestion(-1)">Next</button>
+    </div>
+</div>

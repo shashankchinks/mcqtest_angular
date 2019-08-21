@@ -1,0 +1,45 @@
+<div>
+  <div class="col-md-12 bg-info text-center text-uppercase p-md-2" style="color: white;">
+    Sample Test Portal
+  </div>
+  <div class="col-md-12">
+    <div class="col-md-2 bg-secondary d-inline-block" style="color: white;">
+      <div>Total marks: 60 <i class="fas fa-check-circle"></i></div>
+      <div>Negative mark: 1 <i class="fas fa-check-circle"></i></div>
+    </div>
+    <div class="col-md-8 d-inline-block"></div>
+    <div class="col-md-2 bg-secondary d-inline-block" style="color: white;">
+      Total time : 60 min
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="bg-danger text-center text-uppercase p-md-2" style="color: white;">Please read the following instruction carefully</div>
+    <div>
+      <ul style="padding:0; margin:0;">
+        <ol>Candidates will have to invariably produce and submit the requisite documents such as valid call letter, a photocopy of photo-identity proof bearing the same name as it appears on the online submitted application form etc. at the time of examinations (Preliminary & Main). No document shall be directly sent to IBPS by candidates before or after the online examinations (Preliminary & Main).</ol>
+        <ol>Before applying for the post, the candidate should ensure that he/she fulfils the eligibility and other norms mentioned in this advertisement. Candidates are therefore advised to carefully read this advertisement and follow all the instructions given for submitting online application.</ol>
+        <ol>All the candidates who wish to apply under CRP-Clerk-VIII are hereby informed that providing AADHAR number or AADHAR Enrolment number in the application, for CRP Clerk-VIII is optional.</ol>
+        <ol>A Candidate’s admission to the Preliminary examination/ shortlisting for Main examination/ admission to the Main examination and subsequent processes is strictly provisional. The mere fact that the call letter(s)/ provisional allotment has been issued to the candidate does not imply that his/ her candidature has been finally cleared by IBPS/ Participating Organisation. IBPS/ Participating Organisations would be free to reject any application, at any stage of the process, cancel the candidature of the candidate in case it is detected at any stage that a candidate does not fulfill the eligibility norms and/or that he/she has furnished any incorrect/false information/certificate/documents or has suppressed any material fact(s).If candidature of any candidate is rejected for any reason according to the terms and conditions of this advertisement, no further representation in this regard will be entertained. Such decisions shall be final and binding on the candidate. If any of these shortcomings is/are detected after appointment in a Participating Organisation, his/her services are liable to be summarily terminated.</ol>
+      </ul>
+    </div>
+    <div>
+      <div class="col-md-6" style="margin: 0 auto;">
+        <h3 class="text-center pt-20">Preceed for test</h3>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputMobile1">Mobile No.</label>
+            <input type="text" class="form-control" id="exampleInputMobile1" maxlength="10" minlength="10" placeholder="Enter mobile number" name="startTestDetails.mobile" [(ngModel)]="startTestDetails.mobile" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputMobile1">Code</label>
+            <input type="text" class="form-control" id="exampleInputMobile1"  placeholder="Enter code here" name="startTestDetails.code" [(ngModel)]="startTestDetails.code" />
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="nexttoQuestion()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div>
+      \
+    </div>
+  </div>
+</div>
